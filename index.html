@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HCSC</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+	<div class="container">
+		<div class ="row col-md-6 col-md-offset-3">
+			<div class="panel panel-primary">
+				<div class="panel-heading text-center">
+				<h1>Covid-19 Screening</h1>
+					
+				</div>
+				<div class="panel-body">
+					<form action="connect.php" method="post">
+						<div class="form-group">
+							<label for="fname">First Name</label>
+							<input type="text" class="form-control" id="fname" required name="fname" />
+							
+						</div>
+						<div class="form-group">
+							<label for="lname">Last Name</label>
+							<input type="text" class="form-control" id="lname" required name="lname" />
+							
+						</div>
+						<div class="form-group">
+							<label for="idNo">ID Number</label>
+							<input type="text" class="form-control" id="idNo" required name="idNo" />
+							
+						</div>
+						<div class="form-group">
+							<label for="cellNo">Cell Number</label>
+							<input type="text" class="form-control" id="cellNo" required name="cellNo"/>
+							
+						</div>
+						<div class="form-group">
+							<label>Gender</label>
+							<div>
+								<label for="male" class="radio-inline"><input type="radio" name="gender" value="m" id="male" required>Male</label>
+								<label for="female" class="radio-inline"><input type="radio" name="gender" value="f" id="female" required>Female</label>
+							</div>
+							
+						</div>
+						<div class="form-group">
+							<label>Have you been in contact with someone who has tested positive of COVID-19?</label>
+							<div>
+								<label for="yes" class="radio-inline"><input type="radio" name="q1" value="y" id="yes" required>Yes</label>
+								<label for="no" class="radio-inline"><input type="radio" name="q1" value="n" id="no" required>No</label>
+							</div>
+							
+						</div>
+						<div class="form-group">
+							<label>Are you experiencing any Fever,Cough,Shortness of breath, sore throats, loss of taste or smell?</label>
+							<div>
+								<label for="qyes" class="radio-inline"><input type="radio" name="q2" value="y" id="qyes" required>Yes</label>
+								<label for="qno" class="radio-inline"><input type="radio" name="q2" value="n" id="qno" required>No</label>
+								<label>If yes, Please quarantine for 14 days, the health care center will contact you.</label>
+							</div>
+							
+						</div>
+						<input type="submit" class="btn btn-primary">
+
+					</form>
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
